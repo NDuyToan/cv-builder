@@ -1,4 +1,5 @@
 import React from 'react';
+import { ExternalLink } from 'lucide-react';
 import { ExperienceEntry, CVLabels } from '../types/cv';
 
 interface ExperienceSectionProps {
@@ -32,7 +33,9 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({
                   </>
                 )}
               </div>
-              <div className="exp-date">{exp.period}</div>
+              <div className="exp-date">
+                <span className="date-badge">{exp.period}</span>
+              </div>
             </div>
 
             {/* If the experience has standalone description and bullets (e.g. Personal Projects) */}
@@ -56,23 +59,26 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({
                   <div className="proj-item">
                     <div className="proj-header">
                       <div className="proj-name">
-                        {labels.project} {proj.name}
+                        <span className="proj-label">{labels.project}</span>{' '}
+                        <span className="proj-title">{proj.name}</span>
                       </div>
                       {(proj.teamSize || proj.link) && (
                         <div className="proj-meta">
                           {proj.teamSize && (
-                            <span>
+                            <span className="team-size-badge">
                               {labels.teamSize} {proj.teamSize}
                             </span>
                           )}
-                          {proj.teamSize && proj.link && <span> &nbsp;|&nbsp; </span>}
+                          {proj.teamSize && proj.link && <span> &nbsp; </span>}
                           {proj.link && (
                             <a
                               href={proj.link.url}
                               target="_blank"
                               rel="noopener noreferrer"
+                              className="cv-link inline-link"
                             >
-                              {proj.link.label}
+                              <span>{proj.link.label}</span>
+                              <ExternalLink size={9} className="link-icon" />
                             </a>
                           )}
                         </div>
@@ -81,7 +87,7 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({
 
                     {proj.description && (
                       <p className="proj-desc">
-                        <strong>{labels.description}</strong> {proj.description}
+                        <strong className="desc-title">{labels.description}</strong> {proj.description}
                       </p>
                     )}
 
@@ -98,18 +104,20 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({
 
                     {proj.technologies && proj.technologies.length > 0 && (
                       <div className="tech-stack-row">
-                        <strong>{labels.technologies}</strong>{' '}
-                        {proj.technologies.join(', ')}
+                        <strong className="tech-title">{labels.technologies}</strong>{' '}
+                        <span className="tech-list">{proj.technologies.join(', ')}</span>
                         {proj.productUrl && (
                           <>
                             {' '}
-                            | <strong>{labels.product}</strong>{' '}
+                            | <strong className="tech-title">{labels.product}</strong>{' '}
                             <a
                               href={proj.productUrl.url}
                               target="_blank"
                               rel="noopener noreferrer"
+                              className="cv-link inline-link"
                             >
-                              {proj.productUrl.label}
+                              <span>{proj.productUrl.label}</span>
+                              <ExternalLink size={9} className="link-icon" />
                             </a>
                           </>
                         )}

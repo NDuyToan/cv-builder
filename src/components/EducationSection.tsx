@@ -25,18 +25,22 @@ export const EducationSection: React.FC<EducationSectionProps> = ({
           <div className="edu-entry" key={index}>
             <div className="edu-top-row">
               <div className="edu-school">{edu.school}</div>
-              <div className="edu-date">{edu.period}</div>
+              <div className="edu-date">
+                <span className="date-badge">{edu.period}</span>
+              </div>
             </div>
             <div className="edu-detail">
-              <strong>{labels.major}</strong> {edu.major} ({edu.degree})
+              <strong className="edu-field">{labels.major}</strong> {edu.major} ({edu.degree})
               {edu.gpa && (
                 <>
-                  {' '}&nbsp;|&nbsp; <strong>{labels.gpa}</strong> {edu.gpa}
+                  {' '}&nbsp;|&nbsp; <strong className="edu-field">{labels.gpa}</strong>{' '}
+                  <span className="edu-highlight">{edu.gpa}</span>
                 </>
               )}
               {edu.grade && (
                 <>
-                  {' '}&nbsp;|&nbsp; <strong>{labels.grade}</strong> {edu.grade}
+                  {' '}&nbsp;|&nbsp; <strong className="edu-field">{labels.grade}</strong>{' '}
+                  <span className="edu-highlight">{edu.grade}</span>
                 </>
               )}
               {edu.details && <div>{edu.details}</div>}

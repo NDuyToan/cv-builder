@@ -1,4 +1,5 @@
 import React from 'react';
+import { Phone, Mail, MapPin, Linkedin, Github, Globe } from 'lucide-react';
 import { PersonalInfo, CVLabels } from '../types/cv';
 
 interface HeaderProps {
@@ -17,59 +18,94 @@ export const Header: React.FC<HeaderProps> = ({ personalInfo, labels }) => {
 
         <div className="contact-grid">
           {contact.phone && (
-            <>
-              <span className="label">{labels.phone}</span>
-              <span>{contact.phone}</span>
-            </>
+            <div className="contact-item">
+              <span className="contact-label">
+                <Phone size={13} className="contact-icon" />
+                <span>{labels.phone}</span>
+              </span>
+              <span className="contact-value">{contact.phone}</span>
+            </div>
           )}
 
           {contact.email && (
-            <>
-              <span className="label">{labels.email}</span>
-              <span>
-                <a href={`mailto:${contact.email}`}>{contact.email}</a>
+            <div className="contact-item">
+              <span className="contact-label">
+                <Mail size={13} className="contact-icon" />
+                <span>{labels.email}</span>
               </span>
-            </>
+              <span className="contact-value">
+                <a href={`mailto:${contact.email}`} className="cv-link">
+                  {contact.email}
+                </a>
+              </span>
+            </div>
           )}
 
           {contact.address && (
-            <>
-              <span className="label">{labels.address}</span>
-              <span>{contact.address}</span>
-            </>
+            <div className="contact-item">
+              <span className="contact-label">
+                <MapPin size={13} className="contact-icon" />
+                <span>{labels.address}</span>
+              </span>
+              <span className="contact-value">{contact.address}</span>
+            </div>
           )}
 
           {contact.linkedin && (
-            <>
-              <span className="label">{labels.linkedin}</span>
-              <span>
-                <a href={contact.linkedin.url} target="_blank" rel="noopener noreferrer">
+            <div className="contact-item">
+              <span className="contact-label">
+                <Linkedin size={13} className="contact-icon" />
+                <span>{labels.linkedin}</span>
+              </span>
+              <span className="contact-value">
+                <a
+                  href={contact.linkedin.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cv-link"
+                >
                   {contact.linkedin.label}
                 </a>
               </span>
-            </>
+            </div>
           )}
 
           {contact.github && (
-            <>
-              <span className="label">{labels.github}</span>
-              <span>
-                <a href={contact.github.url} target="_blank" rel="noopener noreferrer">
+            <div className="contact-item">
+              <span className="contact-label">
+                <Github size={13} className="contact-icon" />
+                <span>{labels.github}</span>
+              </span>
+              <span className="contact-value">
+                <a
+                  href={contact.github.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cv-link"
+                >
                   {contact.github.label}
                 </a>
               </span>
-            </>
+            </div>
           )}
 
           {contact.website && (
-            <>
-              <span className="label">Website:</span>
-              <span>
-                <a href={contact.website.url} target="_blank" rel="noopener noreferrer">
+            <div className="contact-item">
+              <span className="contact-label">
+                <Globe size={13} className="contact-icon" />
+                <span>Website:</span>
+              </span>
+              <span className="contact-value">
+                <a
+                  href={contact.website.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cv-link"
+                >
                   {contact.website.label}
                 </a>
               </span>
-            </>
+            </div>
           )}
         </div>
       </div>

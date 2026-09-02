@@ -13,7 +13,7 @@
   html,
   body {
     background: #ffffff !important;
-    color: #334155 !important;
+    color: var(--text-main) !important;
     margin: 0 !important;
     padding: 0 !important;
     width: 100% !important;
@@ -77,8 +77,24 @@
   }
 
   /* Link formatting for print */
-  a {
-    color: #2563eb !important;
+  a,
+  .cv-link {
+    color: var(--accent-color) !important;
     text-decoration: none !important;
+    border-bottom: none !important;
+    background-color: transparent !important;
+  }
+
+  .link-icon {
+    display: none !important;
+  }
+
+  .date-badge,
+  .team-size-badge {
+    background-color: var(--accent-bg) !important;
+    border: 1px solid var(--accent-border) !important;
+    color: var(--accent-hover) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 }

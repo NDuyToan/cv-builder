@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { cvVietnamese, cvEnglish, cvProfiles } from './data';
 import { CVData } from './types/cv';
-import { Toolbar } from './components/Toolbar';
+import { Toolbar, ColorTheme } from './components/Toolbar';
 import { CVDocument } from './components/CVDocument';
 import './styles/index.css';
 import './styles/print.css';
@@ -9,6 +9,7 @@ import './styles/print.css';
 export function App() {
   const [currentLang, setCurrentLang] = useState<'vi' | 'en'>('vi');
   const [selectedProfileId, setSelectedProfileId] = useState<string>('cv-vi');
+  const [currentTheme, setCurrentTheme] = useState<ColorTheme>('ocean');
 
   // Determine active CV data
   const activeCV: CVData = (() => {
@@ -39,7 +40,7 @@ export function App() {
   }, [currentLang]);
 
   return (
-    <div className="app-container">
+    <div className="app-container" data-theme={currentTheme}>
       {/* Floating Toolbar (hidden in print mode) */}
       <Toolbar
         currentLang={currentLang}
@@ -47,6 +48,8 @@ export function App() {
         profiles={cvProfiles}
         selectedProfileId={selectedProfileId}
         onProfileChange={handleProfileChange}
+        currentTheme={currentTheme}
+        onThemeChange={setCurrentTheme}
       />
 
       {/* CV Document (A4 Container) */}
