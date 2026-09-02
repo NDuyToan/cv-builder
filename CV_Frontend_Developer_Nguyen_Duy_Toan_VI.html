@@ -70,25 +70,47 @@
 
     .contact-grid {
       display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 4px 14px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 4px 18px;
       font-size: 12px;
       color: #334155;
     }
 
-    .contact-grid .label {
-      font-weight: 600;
-      color: #0f172a;
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+      line-height: 1.4;
+      min-width: 0;
     }
 
-    .contact-grid a {
+    .contact-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: 600;
+      color: #0f172a;
+      white-space: nowrap;
+      flex-shrink: 0;
+      line-height: 1.4;
+    }
+
+    .contact-value {
+      color: #334155;
+      line-height: 1.4;
+      word-break: break-word;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .contact-value a {
       color: #0284c7;
       text-decoration: none;
       border-bottom: 1px dashed #bae6fd;
       transition: all 0.15s ease;
     }
 
-    .contact-grid a:hover {
+    .contact-value a:hover {
       color: #0369a1;
       background-color: #f0f9ff;
       border-bottom: 1px solid #0284c7;
@@ -428,20 +450,30 @@
         <div class="role-title">Middle Frontend Developer</div>
         
         <div class="contact-grid">
-          <span class="label">Số điện thoại:</span>
-          <span>034 861 8373</span>
+          <div class="contact-item">
+            <span class="contact-label">Số điện thoại:</span>
+            <span class="contact-value">034 861 8373</span>
+          </div>
 
-          <span class="label">Email:</span>
-          <span><a href="mailto:nguyenduytoanbkdn@gmail.com">nguyenduytoanbkdn@gmail.com</a></span>
+          <div class="contact-item">
+            <span class="contact-label">Email:</span>
+            <span class="contact-value"><a href="mailto:nguyenduytoanbkdn@gmail.com">nguyenduytoanbkdn@gmail.com</a></span>
+          </div>
 
-          <span class="label">Địa chỉ:</span>
-          <span>Đà Nẵng, Việt Nam</span>
+          <div class="contact-item">
+            <span class="contact-label">Địa chỉ:</span>
+            <span class="contact-value">Đà Nẵng, Việt Nam</span>
+          </div>
 
-          <span class="label">LinkedIn:</span>
-          <span><a href="https://www.linkedin.com/in/toan-nguyen-dev/" target="_blank">linkedin.com/in/toan-nguyen-dev</a></span>
+          <div class="contact-item">
+            <span class="contact-label">LinkedIn:</span>
+            <span class="contact-value"><a href="https://www.linkedin.com/in/toan-nguyen-dev/" target="_blank">linkedin.com/in/toan-nguyen-dev</a></span>
+          </div>
 
-          <span class="label">GitHub:</span>
-          <span><a href="https://github.com/NDuyToan" target="_blank">github.com/NDuyToan</a></span>
+          <div class="contact-item">
+            <span class="contact-label">GitHub:</span>
+            <span class="contact-value"><a href="https://github.com/NDuyToan" target="_blank">github.com/NDuyToan</a></span>
+          </div>
         </div>
       </div>
 
