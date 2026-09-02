@@ -10,6 +10,17 @@
     display: none !important;
   }
 
+  *,
+  *::before,
+  *::after {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    user-select: text !important;
+    text-shadow: none !important;
+    filter: none !important;
+    backdrop-filter: none !important;
+  }
+
   html,
   body {
     background: #ffffff !important;
@@ -17,8 +28,6 @@
     margin: 0 !important;
     padding: 0 !important;
     width: 100% !important;
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
   }
 
   .app-container {
@@ -35,6 +44,7 @@
     width: 100% !important;
     max-width: 100% !important;
     min-height: auto !important;
+    background: #ffffff !important;
   }
 
   .cv-container {
@@ -54,6 +64,11 @@
     break-inside: avoid;
     page-break-after: avoid;
     break-after: avoid;
+  }
+
+  .section-badge,
+  .section-line {
+    z-index: auto !important;
   }
 
   .skills-table {
@@ -76,13 +91,14 @@
     break-inside: avoid;
   }
 
-  /* Link formatting for print */
+  /* Link formatting for print - Keep fully clickable & selectable */
   a,
   .cv-link {
     color: var(--accent-color) !important;
     text-decoration: none !important;
     border-bottom: none !important;
     background-color: transparent !important;
+    cursor: pointer !important;
   }
 
   .link-icon {
@@ -94,7 +110,5 @@
     background-color: var(--accent-bg) !important;
     border: 1px solid var(--accent-border) !important;
     color: var(--accent-hover) !important;
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
   }
 }
