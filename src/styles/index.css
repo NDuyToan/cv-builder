@@ -211,8 +211,8 @@ body {
 /* Section Header Banner */
 .section-header {
   display: flex;
-  align-items: center;
-  margin-top: 7px;
+  align-items: flex-end;
+  margin-top: 8px;
   margin-bottom: 5px;
   position: relative;
   page-break-after: avoid;
@@ -226,10 +226,13 @@ body {
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 3px 10px;
-  border-radius: 2px;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px 3px 10px;
+  border-radius: 2px 2px 0 0;
   white-space: nowrap;
+  line-height: 1.2;
   z-index: 2;
 }
 
@@ -237,7 +240,7 @@ body {
   flex: 1;
   height: 1.5px;
   background-color: #2b3a4a;
-  margin-left: -2px;
+  margin-left: -1px;
   z-index: 1;
 }
 
