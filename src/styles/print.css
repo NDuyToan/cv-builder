@@ -6,7 +6,8 @@
 @media print {
   /* Hide all non-printable UI controls */
   .no-print,
-  .toolbar-container {
+  .toolbar-container,
+  .page-break-indicator {
     display: none !important;
   }
 
@@ -53,10 +54,23 @@
     padding: 0 !important;
   }
 
-  /* Prevent elements from being awkwardly cut across pages */
+  /* Manual Page Breaks */
+  .page-break-before {
+    page-break-before: always !important;
+    break-before: page !important;
+  }
+
+  .page-break-after {
+    page-break-after: always !important;
+    break-after: page !important;
+  }
+
+  /* Prevent orphan headers at the bottom of pages */
   .header-section {
     page-break-inside: avoid;
     break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
   }
 
   .section-header {
@@ -72,23 +86,62 @@
   }
 
   .skills-table {
-    page-break-inside: avoid;
-    break-inside: avoid;
+    page-break-inside: auto !important;
+    break-inside: auto !important;
   }
 
+  .skills-table tr {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Allow companies and projects to flow naturally across pages to fill page 100% */
   .exp-entry {
-    page-break-inside: avoid;
-    break-inside: avoid;
+    page-break-inside: auto !important;
+    break-inside: auto !important;
   }
 
   .proj-item {
-    page-break-inside: avoid;
-    break-inside: avoid;
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+  }
+
+  /* Keep company title with its first content (never leave alone at page bottom) */
+  .exp-top-row {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  /* Keep project headers with their descriptions */
+  .proj-header {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  .proj-resp-title {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  /* Individual bullets avoid getting sliced across pages */
+  .bullet-list li {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .tech-stack-row {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
   }
 
   .edu-entry {
     page-break-inside: avoid;
     break-inside: avoid;
+  }
+
+  .edu-top-row {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
   }
 
   /* Link formatting for print - Keep fully clickable & selectable */

@@ -45,11 +45,37 @@ responsibilities: [
   'Tối ưu hóa hiệu năng và tích hợp RESTful APIs / GraphQL...',
 ]
 ```
-Nhờ có **Vite HMR**, khi bạn lưu file, giao diện trình duyệt sẽ tự động cập nhật ngay lập tức!
 
 ---
 
-## 🏢 3. Cách tạo bản CV riêng cho từng công ty cụ thể
+## ✂️ 3. Chủ động ngắt trang A4 (Custom Page Breaks)
+
+Để tránh trường hợp tiêu đề bị rớt lại ở cuối trang 1 còn nội dung nhảy sang trang 2, hoặc bạn muốn chủ động chia trang theo ý mình:
+
+Chỉ cần thêm thuộc tính `pageBreakBefore: true` vào bất kỳ **Công ty (`experiences`)**, **Dự án (`projects`)**, hoặc **Học vấn (`education`)** trong file data:
+
+```typescript
+// Ví dụ: Muốn ngắt trang trước Công ty SmartDev
+{
+  company: 'SmartDev Company',
+  role: 'Frontend Developer',
+  period: '03/2021 – 10/2022',
+  pageBreakBefore: true, // 👈 Thêm dòng này để chủ động đẩy công ty này sang đầu trang tiếp theo!
+  projects: [ ... ]
+}
+
+// Hoặc muốn ngắt trang trước 1 dự án con cụ thể:
+{
+  name: 'Linglow Admin & Partner Portal',
+  pageBreakBefore: true, // 👈 Đẩy dự án này sang trang mới
+  // ...
+}
+```
+Trên màn hình xem trước, hệ thống sẽ hiển thị một đường gạch nét đứt `✂ Ngắt trang tại đây (Page Break)` để bạn thấy trước vị trí ngắt trang (đường này tự động ẩn khi in ra PDF).
+
+---
+
+## 🏢 4. Cách tạo bản CV riêng cho từng công ty cụ thể
 
 Khi bạn muốn ứng tuyển vào một công ty cụ thể (ví dụ Công ty ABC) và muốn nhấn mạnh các kỹ năng/dự án phù hợp với công ty đó:
 
@@ -77,19 +103,19 @@ Khi bạn muốn ứng tuyển vào một công ty cụ thể (ví dụ Công ty
 
 ---
 
-## 🖼️ 4. Thay đổi ảnh đại diện (Avatar)
+## 🖼️ 5. Thay đổi ảnh đại diện (Avatar)
 
 - Đặt file ảnh của bạn vào thư mục `public/avatar.png` (khuyên dùng ảnh tỷ lệ đứng khoảng 3:4 hoặc 4:5).
 - Hoặc chỉnh sửa đường dẫn ảnh trong `src/data/cv-vi.ts` (mục `personalInfo.avatarUrl`).
 
 ---
 
-## 🖨️ 5. Hướng dẫn In CV / Xuất file PDF chuẩn A4
+## 🖨️ 6. Hướng dẫn In CV / Xuất file PDF chuẩn A4 (Select text & Click link 100%)
 
 1. Nhấp vào nút **"In CV / Xuất PDF"** trên thanh công cụ (hoặc nhấn phím tắt `Ctrl + P`).
-2. Trên hộp thoại in của trình duyệt (Chrome / Edge / Firefox):
-   - **Destination (Máy in)**: Chọn *Save as PDF* (Lưu dưới dạng PDF).
+2. Trên hộp thoại in của trình duyệt:
+   - **Destination (Máy in)**: Chọn **Save as PDF** (Lưu dưới dạng PDF) — *Không chọn Microsoft Print to PDF*.
    - **Paper size (Khổ giấy)**: Chọn *A4*.
    - **Margins (Căn lề)**: Chọn *Default* (Mặc định) hoặc *None*.
-   - **Options (Tùy chọn)**: Đảm bảo đã tick chọn **Background graphics** (Đồ họa nền) để hiển thị đầy đủ màu sắc các badge `#2b3a4a`.
+   - **Options (Tùy chọn)**: Đảm bảo đã tick chọn **Background graphics** (Đồ họa nền) để hiển thị đầy đủ màu sắc các badge và thanh tiêu đề.
 3. Bấm **Save** để lưu file PDF chất lượng cao.

@@ -23,7 +23,16 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({
       </div>
       <div className="section-content">
         {experiences.map((exp, expIdx) => (
-          <div className="exp-entry" key={expIdx}>
+          <div
+            className={`exp-entry ${exp.pageBreakBefore ? 'page-break-before' : ''}`}
+            key={expIdx}
+          >
+            {exp.pageBreakBefore && (
+              <div className="page-break-indicator no-print">
+                <span>✂ Ngắt trang tại đây (Page Break)</span>
+              </div>
+            )}
+
             <div className="exp-top-row">
               <div className="exp-company-role">
                 <span className="company">{exp.company}</span>
@@ -56,7 +65,17 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({
             {exp.projects &&
               exp.projects.map((proj, projIdx) => (
                 <React.Fragment key={projIdx}>
-                  <div className="proj-item">
+                  <div
+                    className={`proj-item ${
+                      proj.pageBreakBefore ? 'page-break-before' : ''
+                    }`}
+                  >
+                    {proj.pageBreakBefore && (
+                      <div className="page-break-indicator no-print">
+                        <span>✂ Ngắt trang tại đây (Page Break)</span>
+                      </div>
+                    )}
+
                     <div className="proj-header">
                       <div className="proj-name">
                         <span className="proj-label">{labels.project}</span>{' '}

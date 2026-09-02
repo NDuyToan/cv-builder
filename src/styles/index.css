@@ -458,12 +458,44 @@ body {
 }
 
 /* ==========================================================================
+   PAGE BREAK HELPERS & INDICATORS
+   ========================================================================== */
+.page-break-before {
+  page-break-before: always;
+  break-before: page;
+}
+
+.page-break-after {
+  page-break-after: always;
+  break-after: page;
+}
+
+.page-break-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px 0 8px 0;
+  border-top: 1.5px dashed #94a3b8;
+  color: #64748b;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  user-select: none;
+}
+
+.page-break-indicator span {
+  background: #ffffff;
+  padding: 0 8px;
+  margin-top: -9px;
+}
+
+/* ==========================================================================
    WORK EXPERIENCE & PROJECTS (Separated cleanly by company)
    ========================================================================== */
 .exp-entry {
   margin-bottom: 18px;
-  page-break-inside: avoid;
-  break-inside: avoid;
+  page-break-inside: auto;
+  break-inside: auto;
 }
 
 .exp-entry:last-child {
@@ -477,6 +509,8 @@ body {
   margin-bottom: 6px;
   padding-bottom: 4px;
   border-bottom: 1.5px solid var(--border-subtle);
+  page-break-after: avoid;
+  break-after: avoid;
 }
 
 .exp-company-role {
@@ -511,8 +545,8 @@ body {
   margin-top: 8px;
   margin-bottom: 10px;
   padding-left: 2px;
-  page-break-inside: avoid;
-  break-inside: avoid;
+  page-break-inside: auto;
+  break-inside: auto;
 }
 
 .proj-header {
@@ -520,6 +554,8 @@ body {
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 4px;
+  page-break-after: avoid;
+  break-after: avoid;
 }
 
 .proj-name {
@@ -573,6 +609,8 @@ body {
   margin-top: 5px;
   margin-bottom: 3px;
   font-size: 12.5px;
+  page-break-after: avoid;
+  break-after: avoid;
 }
 
 .bullet-list {
@@ -589,6 +627,8 @@ body {
   color: var(--text-main);
   line-height: 1.45;
   font-size: 12.5px;
+  page-break-inside: avoid;
+  break-inside: avoid;
 }
 
 .bullet-list li::before {

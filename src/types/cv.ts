@@ -26,6 +26,7 @@ export interface PersonalInfo {
 export interface SkillCategory {
   category: string;
   items: string[];
+  pageBreakBefore?: boolean;
 }
 
 export interface ProjectDetail {
@@ -43,6 +44,7 @@ export interface ProjectDetail {
   description: string;
   responsibilities: string[];
   technologies: string[];
+  pageBreakBefore?: boolean;
 }
 
 export interface ExperienceEntry {
@@ -52,6 +54,7 @@ export interface ExperienceEntry {
   description?: string;
   bullets?: string[];
   projects?: ProjectDetail[];
+  pageBreakBefore?: boolean;
 }
 
 export interface EducationEntry {
@@ -62,6 +65,7 @@ export interface EducationEntry {
   gpa?: string;
   grade?: string;
   details?: string;
+  pageBreakBefore?: boolean;
 }
 
 export interface CVLabels {

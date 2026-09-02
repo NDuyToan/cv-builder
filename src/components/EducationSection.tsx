@@ -22,7 +22,15 @@ export const EducationSection: React.FC<EducationSectionProps> = ({
       </div>
       <div className="section-content">
         {education.map((edu, index) => (
-          <div className="edu-entry" key={index}>
+          <div
+            className={`edu-entry ${edu.pageBreakBefore ? 'page-break-before' : ''}`}
+            key={index}
+          >
+            {edu.pageBreakBefore && (
+              <div className="page-break-indicator no-print">
+                <span>✂ Ngắt trang tại đây (Page Break)</span>
+              </div>
+            )}
             <div className="edu-top-row">
               <div className="edu-school">{edu.school}</div>
               <div className="edu-date">
