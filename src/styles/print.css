@@ -1,0 +1,84 @@
+@page {
+  size: A4 portrait;
+  margin: 8mm 12mm 8mm 12mm;
+}
+
+@media print {
+  /* Hide all non-printable UI controls */
+  .no-print,
+  .toolbar-container {
+    display: none !important;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #334155 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .app-container {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
+  .cv-page-wrapper {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: auto !important;
+  }
+
+  .cv-container {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Prevent elements from being awkwardly cut across pages */
+  .header-section {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .section-header {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  .skills-table {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .exp-entry {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .proj-item {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .edu-entry {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Link formatting for print */
+  a {
+    color: #2563eb !important;
+    text-decoration: none !important;
+  }
+}
