@@ -89,6 +89,25 @@ export const Header: React.FC<HeaderProps> = ({ personalInfo, labels }) => {
             </div>
           )}
 
+          {contact.portfolio && (
+            <div className="contact-item">
+              <span className="contact-label">
+                <Globe size={13} className="contact-icon" />
+                <span>{labels.portfolio || 'Portfolio:'}</span>
+              </span>
+              <span className="contact-value">
+                <a
+                  href={contact.portfolio.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cv-link"
+                >
+                  {contact.portfolio.label}
+                </a>
+              </span>
+            </div>
+          )}
+
           {contact.website && (
             <div className="contact-item">
               <span className="contact-label">

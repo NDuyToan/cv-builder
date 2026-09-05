@@ -13,7 +13,24 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({
   experiences,
   labels,
 }) => {
-  if (!experiences || experiences.length === 0) return null;
+  const visibleExperiences = (experiences || [])
+    .filter((exp) => !exp.hidden)
+    .map((exp) => ({
+      ...exp,
+      projects: exp.projects?.filter((proj) => !proj.hidden),
+    }))
+    .filter((exp) => {
+      // Nếu công ty có định nghĩa projects nhưng tất cả đều bị ẩn và không có mô tả riêng thì ẩn công ty
+      const hadProjects = exp.projects !== undefined;
+      const hasRemainingProjects = Boolean(exp.projects && exp.projects.length > 0);
+      const hasText = Boolean(exp.description || (exp.bullets && exp.bullets.length > 0));
+      if (hadProjects && !hasRemainingProjects && !hasText) {
+        return false;
+      }
+      return true;
+    });
+
+  if (!visibleExperiences || visibleExperiences.length === 0) return null;
 
   return (
     <>
@@ -22,7 +39,7 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({
         <div className="section-line"></div>
       </div>
       <div className="section-content">
-        {experiences.map((exp, expIdx) => (
+        {visibleExperiences.map((exp, expIdx) => (
           <div
             className={`exp-entry ${exp.pageBreakBefore ? 'page-break-before' : ''}`}
             key={expIdx}

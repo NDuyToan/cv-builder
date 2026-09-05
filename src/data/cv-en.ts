@@ -23,6 +23,7 @@ export const cvEnglish: CVData = {
     address: 'Location:',
     linkedin: 'LinkedIn:',
     github: 'GitHub:',
+    portfolio: 'Portfolio:',
   },
   personalInfo: {
     name: 'NGUYEN DUY TOAN',
@@ -39,6 +40,10 @@ export const cvEnglish: CVData = {
       github: {
         label: 'github.com/NDuyToan',
         url: 'https://github.com/NDuyToan',
+      },
+      portfolio: {
+        label: 'nguyenduytoan.io.vn',
+        url: 'https://www.nguyenduytoan.io.vn/',
       },
     },
   },

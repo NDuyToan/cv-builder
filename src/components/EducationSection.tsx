@@ -12,7 +12,8 @@ export const EducationSection: React.FC<EducationSectionProps> = ({
   education,
   labels,
 }) => {
-  if (!education || education.length === 0) return null;
+  const visibleEducation = (education || []).filter((edu) => !edu.hidden);
+  if (!visibleEducation || visibleEducation.length === 0) return null;
 
   return (
     <>
@@ -21,7 +22,7 @@ export const EducationSection: React.FC<EducationSectionProps> = ({
         <div className="section-line"></div>
       </div>
       <div className="section-content">
-        {education.map((edu, index) => (
+        {visibleEducation.map((edu, index) => (
           <div
             className={`edu-entry ${edu.pageBreakBefore ? 'page-break-before' : ''}`}
             key={index}

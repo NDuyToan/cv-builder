@@ -10,6 +10,10 @@ export interface ContactInfo {
     label: string;
     url: string;
   };
+  portfolio?: {
+    label: string;
+    url: string;
+  };
   website?: {
     label: string;
     url: string;
@@ -27,6 +31,8 @@ export interface SkillCategory {
   category: string;
   items: string[];
   pageBreakBefore?: boolean;
+  /** Cờ ẩn danh mục kỹ năng khỏi CV (vẫn lưu trong data) */
+  hidden?: boolean;
 }
 
 export interface ProjectDetail {
@@ -45,6 +51,8 @@ export interface ProjectDetail {
   responsibilities: string[];
   technologies: string[];
   pageBreakBefore?: boolean;
+  /** Cờ ẩn dự án khỏi CV (vẫn lưu trong data) */
+  hidden?: boolean;
 }
 
 export interface ExperienceEntry {
@@ -55,6 +63,8 @@ export interface ExperienceEntry {
   bullets?: string[];
   projects?: ProjectDetail[];
   pageBreakBefore?: boolean;
+  /** Cờ ẩn công ty/kinh nghiệm khỏi CV (vẫn lưu trong data) */
+  hidden?: boolean;
 }
 
 export interface EducationEntry {
@@ -66,6 +76,8 @@ export interface EducationEntry {
   grade?: string;
   details?: string;
   pageBreakBefore?: boolean;
+  /** Cờ ẩn học vấn khỏi CV (vẫn lưu trong data) */
+  hidden?: boolean;
 }
 
 export interface CVLabels {
@@ -87,6 +99,7 @@ export interface CVLabels {
   address: string;
   linkedin: string;
   github: string;
+  portfolio?: string;
 }
 
 export interface CVData {

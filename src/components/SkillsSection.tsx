@@ -7,7 +7,8 @@ interface SkillsSectionProps {
 }
 
 export const SkillsSection: React.FC<SkillsSectionProps> = ({ title, skills }) => {
-  if (!skills || skills.length === 0) return null;
+  const visibleSkills = (skills || []).filter((s) => !s.hidden);
+  if (!visibleSkills || visibleSkills.length === 0) return null;
 
   return (
     <>
@@ -18,7 +19,7 @@ export const SkillsSection: React.FC<SkillsSectionProps> = ({ title, skills }) =
       <div className="section-content">
         <table className="skills-table">
           <tbody>
-            {skills.map((skillGroup, index) => (
+            {visibleSkills.map((skillGroup, index) => (
               <tr key={index}>
                 <td className="skill-cat">{skillGroup.category}</td>
                 <td className="skill-items">{skillGroup.items.join(', ')}</td>
