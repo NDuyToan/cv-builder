@@ -48,7 +48,7 @@ export const cvEnglish: CVData = {
     },
   },
   objective:
-    'Frontend Developer with 4+ years of specialized experience in React, Next.js, TypeScript, and modern web application development. Proven track record in building scalable applications from scratch, crafting reusable component libraries, and delivering seamless responsive UIs across desktop, tablet, mobile, and WebView platforms. Strong foundation in frontend architecture, state management, complex form validation, RESTful API & GraphQL integration, and cross-functional collaboration. Passionate about writing clean, maintainable code and continuously optimizing application performance and developer productivity.',
+    'Frontend Developer with over 4 years of hands-on experience in React, Next.js, and TypeScript. Experienced in building web applications from the ground up, designing reusable UI components, and optimizing responsive interfaces across desktop, mobile, and WebView. Solid background in state management, complex form handling, REST and GraphQL integration, and collaborative Agile development.',
   skills: [
     {
       category: 'Core Technologies',
@@ -111,11 +111,11 @@ export const cvEnglish: CVData = {
       company: 'Personal Projects & Technical Growth',
       period: '12/2025 – Present',
       description:
-        'Developing full-stack and modern web applications using React, Next.js, TypeScript, and UI libraries to strengthen frontend architecture and reusable component design skills.',
+        'Building personal projects with React, Next.js, and TypeScript to experiment with modern frontend patterns and reusable UI component architecture.',
       bullets: [
-        'Practiced building end-to-end full-stack applications with authentication, RESTful APIs, form validation, state management, and responsive interfaces.',
-        'Optimized application performance through lazy loading, code splitting, API caching, pagination, and rendering optimization.',
-        'Expanded hands-on backend and deployment knowledge with Node.js, Express.js, NestJS, MongoDB, Prisma, Docker, Linux, and CI/CD pipelines.',
+        'Built full-stack web applications with user authentication, RESTful APIs, form validation, and responsive mobile layouts.',
+        'Improved page load speeds through lazy loading, code splitting, client-side API caching, and render tuning.',
+        'Practiced backend development and deployment using Node.js (Express, NestJS), MongoDB, Prisma, Docker, and Linux.',
       ],
     },
     {
@@ -124,20 +124,20 @@ export const cvEnglish: CVData = {
       period: '01/2023 – 11/2025',
       projects: [
         {
-          name: 'Seasonal Worker Management – Korean Government Product',
+          name: 'Seasonal Worker Management (South Korean Local Government Platform)',
           teamSize: '20 members (Frontend: 6)',
           description:
-            'A large-scale labor management platform for local governments in South Korea. The system enables administrators to manage foreign seasonal workers, employers, job assignments, and operational data via a centralized admin portal and WebView mobile app.',
+            'A labor management platform for South Korean local government offices, tracking seasonal foreign workers, farm employers, and job placements through an admin portal and mobile WebView.',
           responsibilities: [
-            'Developed the Admin Portal from scratch using React and TypeScript, contributing to the overall frontend architecture, code structure, and feature development.',
-            'Collaborated with Dev, QC, BA, and PM teams in requirement analysis; reviewed project documentation, clarified specifications, and contributed actionable feedback.',
-            'Built enterprise-scale modules: worker management, employer management, seasonal job allocation, analytics dashboard, business forms, and high-volume data tables.',
-            'Delivered responsive web interfaces and optimized WebView pages for desktop, tablet, mobile, and in-app webview environments.',
-            'Managed complex global state with Redux-Saga and built multi-step enterprise forms with Formik and Yup validation.',
-            'Implemented robust Role-based Access Control (RBAC) supporting Super Admin, Master Admin, and Admin tiers.',
-            'Engineered Excel import/export functionality with ExcelJS to handle heavy seasonal worker datasets efficiently.',
-            'Optimized file upload workflows by compressing images, converting HEIC to PNG, and batching uploads sequentially to prevent backend overload.',
-            'Integrated multi-language localization using i18next; packaged, deployed, and maintained applications on VPS with PM2.',
+            'Built the admin portal from the ground up with React and TypeScript, structuring the codebase, data flow, and core views.',
+            'Worked with BAs, PMs, and QA engineers to clarify user stories, review specifications, and spot edge cases early.',
+            'Created core modules for worker profiles, employer records, seasonal assignments, metrics dashboards, and large data tables.',
+            'Optimized responsive layouts across desktop, tablet, mobile browsers, and native app WebViews.',
+            'Managed asynchronous data flows with Redux-Saga and handled complex multi-step forms using Formik and Yup.',
+            'Implemented Role-Based Access Control (RBAC) across Super Admin, Master Admin, and Admin levels.',
+            'Developed Excel import and export features with ExcelJS to handle thousands of worker records efficiently.',
+            'Optimized file uploads with client-side image compression, HEIC-to-PNG conversion, and sequential batching to avoid server spikes.',
+            'Added multi-language support using i18next, and managed application builds and uptime on Linux VPS via PM2.',
           ],
           technologies: [
             'React',
@@ -158,12 +158,12 @@ export const cvEnglish: CVData = {
         {
           name: 'Goodtraepay',
           description:
-            'A fintech WebView e-wallet platform supporting cashless transactions via NFC cards and QR codes. Contributed to Social, Survey, Q&A Forum, and Daily Challenges modules.',
+            'A WebView-based mobile wallet supporting NFC and QR payments. Responsible for developing social feeds, surveys, Q&A forums, and daily challenge features.',
           responsibilities: [
-            'Developed responsive UI for Social, Survey, Q&A Forum, and Daily Challenges modules using React.',
-            'Built lightweight, responsive WebView pages ensuring smooth integration and native-like feel inside the mobile app.',
-            'Collaborated closely with Backend, QA, BA, and UI/UX teams to deliver new features and troubleshoot production issues.',
-            'Built frontend applications locally and deployed updates to pre-configured VPS environments for staging and production.',
+            'Built user interfaces for community feeds, user surveys, Q&A forums, and daily challenges in React.',
+            'Ensured WebView pages rendered accurately and scrolled smoothly inside native mobile containers.',
+            'Collaborated with backend and QA teammates to test API contracts and resolve UI defects.',
+            'Packaged production bundles and deployed code updates to Linux VPS test and production instances.',
           ],
           technologies: [
             'React',
@@ -183,11 +183,11 @@ export const cvEnglish: CVData = {
             url: 'https://linglow.net',
           },
           description:
-            'An admin and partner management portal allowing enterprise recruiters to post job openings, screen candidate applications from the Linglow mobile app, and manage recruitment lifecycles.',
+            'An administrative and partner portal enabling employers to post job openings, screen candidates from the Linglow mobile app, and track hiring pipelines.',
           responsibilities: [
-            'Developed and maintained Admin and Partner web portals using Next.js and TypeScript.',
-            'Engineered reusable, accessible UI components for user management, job postings, and applicant tracking systems.',
-            'Coordinated with Backend, QA, BA, and UI/UX designers to refine specifications and ensure top-tier product delivery.',
+            'Maintained and expanded web portals for internal admins and recruitment partners using Next.js and TypeScript.',
+            'Created reusable UI components for account management, job publishing, and applicant screening.',
+            'Coordinated with backend developers and UI designers to refine user journeys and polish interface interactions.',
           ],
           technologies: [
             'Next.js',
@@ -212,11 +212,11 @@ export const cvEnglish: CVData = {
           name: 'Insurance Platform for M&A',
           teamSize: '5 members',
           description:
-            'A web-based platform streamlining underwriting and insurance workflows for corporate Mergers & Acquisitions (M&A) transactions.',
+            'A web application supporting underwriting workflows and insurance policies for corporate Mergers and Acquisitions (M&A) deals.',
           responsibilities: [
-            'Developed and maintained responsive web interfaces for M&A insurance processing using Vue.js and Vuetify.',
-            'Created reusable UI component libraries to improve code consistency and long-term maintainability across the system.',
-            'Worked in an Agile/Scrum environment and communicated directly with international clients to clarify business needs and report progress.',
+            'Developed and maintained user interfaces for M&A insurance workflows using Vue.js and Vuetify.',
+            'Built modular UI components to keep styling consistent and simplify future updates.',
+            'Participated in Agile/Scrum ceremonies and communicated directly with clients to clarify requirements and share progress.',
           ],
           technologies: ['Vue.js', 'Vuetify', 'JavaScript', 'HTML5', 'CSS3', 'Git', 'GitLab'],
         },
@@ -228,11 +228,11 @@ export const cvEnglish: CVData = {
             url: 'https://echannel.fubonlife.com.hk/',
           },
           description:
-            'An online insurance portal enabling retail customers to purchase life insurance products provided by Fubon Life Insurance.',
+            'An online portal allowing retail customers to purchase life insurance policies from Fubon Life.',
           responsibilities: [
-            'Developed and maintained user interfaces for the online life insurance portal using JavaScript and jQuery.',
-            'Implemented pixel-perfect responsive web pages from UI design mockups; collaborated with Singapore backend team to integrate GraphQL APIs.',
-            'Resolved UI cross-browser compatibility issues across major modern browsers.',
+            'Built and maintained customer-facing web pages for insurance sign-ups using JavaScript and jQuery.',
+            'Turned design mockups into responsive pages and integrated GraphQL endpoints with a backend team based in Singapore.',
+            'Fixed cross-browser quirks across Safari, Chrome, and Firefox to ensure reliable presentation.',
           ],
           technologies: [
             'JavaScript',
@@ -255,11 +255,11 @@ export const cvEnglish: CVData = {
           name: 'Meeting Hub (Hotel Booking Platform)',
           teamSize: '4 members',
           description:
-            'An online hotel reservation platform enabling users to search, compare, and book hotel rooms seamlessly.',
+            'An online booking website for searching and reserving hotel rooms.',
           responsibilities: [
-            'Developed and maintained UI for the online hotel booking website using Vue.js and Element UI.',
-            'Integrated RESTful APIs using Axios and managed centralized application state with Vuex.',
-            'Built responsive layouts with Element UI; coordinated version control workflows via Git/GitLab.',
+            'Developed frontend pages for hotel reservations using Vue.js and Element UI.',
+            'Connected RESTful APIs with Axios and handled centralized client state using Vuex.',
+            'Adjusted layouts for different screen sizes and collaborated with teammates through Git.',
           ],
           technologies: [
             'Vue.js',
@@ -276,10 +276,10 @@ export const cvEnglish: CVData = {
         {
           name: 'Insurance Management System',
           description:
-            'Maintained an internal web application in the insurance domain.',
+            'Maintained an internal web application used for insurance operations.',
           responsibilities: [
-            'Maintained existing features and resolved reported bugs and issues.',
-            'Supported development and maintenance of the project using Angular 6 and Bootstrap.',
+            'Fixed reported bug tickets and maintained stability across existing modules.',
+            'Supported the team in building and updating views using Angular 6 and Bootstrap.',
           ],
           technologies: [
             'Angular 6',
@@ -296,12 +296,11 @@ export const cvEnglish: CVData = {
       role: 'Technical Engineer',
       period: '11/2017 – 09/2019',
       bullets: [
-        'Maintained and operated the Building Management System (BMS) at Da Nang International Terminal T2.',
-        'Troubleshot issues and ensured stable operation of the HVAC (climate control) system and wastewater treatment monitoring system.',
-        'Executed, supervised, and commissioned Access Control Systems (ACS), CCTV surveillance, and Wi-Fi infrastructure at Cam Ranh International Terminal.',
-        'Coordinated with contractors and project stakeholders to ensure work quality and delivery schedules.',
-        'Conducted system testing, commissioning, quality inspection, and official project handover upon completion.',
-        'Participated in training programs on Smart Home automation solutions.',
+        'Operated and maintained the Building Management System (BMS) at Da Nang International Terminal T2, keeping HVAC and wastewater monitoring systems running smoothly.',
+        'Supervised site installation of Access Control Systems (ACS), CCTV cameras, and Wi-Fi networks at Cam Ranh International Terminal.',
+        'Worked directly with on-site contractors to verify installation quality and keep work on schedule.',
+        'Conducted field testing, formal inspections, and handoffs with facility managers.',
+        'Completed technical training workshops on Smart Home automation solutions.',
       ],
     },
     {
@@ -309,12 +308,11 @@ export const cvEnglish: CVData = {
       role: 'Production Innovation Staff',
       period: '08/2016 – 06/2017',
       bullets: [
-        'Planned and scheduled implementation projects for introducing automated machinery into motor production lines.',
-        'Monitored and coordinated the end-to-end project lifecycle from design, equipment ordering, and assembly to commissioning and live operation.',
-        'Collaborated with Design, Purchasing, Assembly, and Quality Control departments to guarantee project progress.',
-        'Tracked project milestones, monitored work packages, and urged related teams to ensure on-time delivery.',
-        'Supervised machinery installation, trial runs, and equipment handover prior to mass manufacturing.',
-        'Managed and updated engineering records, manuals, and technical documentation related to project execution.',
+        'Planned and coordinated projects that integrated automated machinery into motor production lines.',
+        'Tracked progress across mechanical design, parts ordering, assembly, and trial testing.',
+        'Collaborated with Design, Procurement, Assembly, and Quality Control teams to clear blockers and hit milestone dates.',
+        'Monitored machine test runs on the factory floor before clearing them for full production runs.',
+        'Maintained technical specifications, equipment checklists, and project records.',
       ],
     },
   ],

@@ -48,7 +48,7 @@ export const cvVietnamese: CVData = {
     },
   },
   objective:
-    "Frontend Developer với hơn 4 năm kinh nghiệm chuyên sâu về React, Next.js, TypeScript và phát triển các ứng dụng web hiện đại. Có kinh nghiệm xây dựng các ứng dụng có khả năng mở rộng từ đầu, phát triển thư viện component tái sử dụng và bàn giao giao diện responsive trên desktop, tablet, mobile và nền tảng WebView. Nền tảng vững chắc về kiến trúc frontend, quản lý state, xử lý form phức tạp, tích hợp RESTful API & GraphQL và làm việc nhóm đa chức năng. Đam mê viết mã nguồn sạch, dễ bảo trì và không ngừng tối ưu hiệu năng ứng dụng cũng như hiệu suất phát triển.",
+    "Frontend Developer với hơn 4 năm kinh nghiệm thực tế với React, Next.js và TypeScript. Có thế mạnh về xây dựng ứng dụng web từ đầu, tạo bộ component tái sử dụng và tối ưu hiển thị responsive trên desktop, mobile lẫn WebView. Nắm vững quản lý state, xử lý form phức tạp, tích hợp RESTful API và GraphQL, cùng kinh nghiệm phối hợp hiệu quả trong nhóm Agile.",
   skills: [
     {
       category: "Công nghệ cốt lõi",
@@ -126,11 +126,11 @@ export const cvVietnamese: CVData = {
       company: "Dự án cá nhân & Nâng cao kỹ thuật (Personal Projects)",
       period: "12/2025 – Hiện tại",
       description:
-        "Xây dựng các dự án cá nhân sử dụng React, Next.js, TypeScript và các thư viện UI hiện đại nhằm củng cố kiến trúc frontend và thiết kế component tái sử dụng.",
+        "Xây dựng các dự án cá nhân bằng React, Next.js và TypeScript để thử nghiệm kiến trúc mới và thiết kế component có tính tái sử dụng cao.",
       bullets: [
-        "Thực hành xây dựng các ứng dụng full-stack hoàn chỉnh với authentication, RESTful APIs, form validation, state management và giao diện responsive.",
-        "Tối ưu hóa hiệu năng ứng dụng thông qua lazy loading, code splitting, API caching, phân trang và tối ưu hóa rendering.",
-        "Mở rộng kiến thức backend và deployment thực tế với Node.js, Express.js, NestJS, MongoDB, Prisma, Docker, Linux và quy trình CI/CD.",
+        "Phát triển ứng dụng full-stack hoàn chỉnh với xác thực tài khoản, RESTful API, kiểm tra biểu mẫu và giao diện tương thích đa thiết bị.",
+        "Cải thiện tốc độ tải trang bằng kỹ thuật lazy loading, chia nhỏ mã nguồn (code splitting), lưu bộ nhớ đệm API và giảm số lần render thừa.",
+        "Làm quen với triển khai thực tế trên Linux và Docker, kết hợp backend Node.js (Express.js, NestJS) cùng MongoDB và Prisma.",
       ],
     },
     {
@@ -139,20 +139,20 @@ export const cvVietnamese: CVData = {
       period: "01/2023 – 11/2025",
       projects: [
         {
-          name: "Seasonal Worker Management – Sản phẩm Chính phủ Hàn Quốc",
+          name: "Seasonal Worker Management (Quản lý lao động chính quyền địa phương Hàn Quốc)",
           teamSize: "20 thành viên (Frontend: 6)",
           description:
-            "Nền tảng quản lý lao động quy mô lớn cho chính quyền địa phương tại Hàn Quốc. Hệ thống cho phép quản trị viên quản lý lao động thời vụ nước ngoài, người sử dụng lao động, phân công công việc và dữ liệu vận hành qua cổng quản trị tập trung kết hợp WebView app.",
+            "Hệ thống quản lý lao động cho chính quyền địa phương tại Hàn Quốc, phục vụ theo dõi lao động thời vụ nước ngoài, chủ hộ sử dụng lao động và điều phối công việc qua web quản trị và ứng dụng WebView.",
           responsibilities: [
-            "Phát triển cổng quản trị (Admin Portal) từ đầu bằng React và TypeScript, đóng góp vào kiến trúc frontend tổng thể, cấu trúc ứng dụng và phát triển tính năng.",
-            "Tham gia phân tích yêu cầu dự án cùng các đội ngũ Dev, QC, BA và PM trước khi triển khai; rà soát tài liệu dự án, làm rõ thắc mắc và đóng góp ý kiến hoàn thiện yêu cầu.",
-            "Xây dựng các module quản lý doanh nghiệp quy mô lớn: quản lý lao động, quản lý chủ sử dụng lao động, phân công công việc thời vụ, dashboard, biểu mẫu nghiệp vụ và bảng dữ liệu lớn.",
-            "Phát triển giao diện responsive và các trang WebView tối ưu mượt mà cho desktop, tablet, mobile và môi trường ứng dụng di động.",
-            "Quản lý state ứng dụng với Redux-Saga và triển khai các form nghiệp vụ phức tạp với Formik và Yup.",
-            "Triển khai hệ thống phân quyền dựa trên vai trò (RBAC) chặt chẽ cho Super Admin, Master Admin và Admin.",
-            "Xây dựng chức năng import/export Excel bằng ExcelJS nhằm xử lý hiệu quả khối lượng dữ liệu lao động lớn.",
-            "Tối ưu hóa quy trình tải tệp lên bằng cách nén ảnh, chuyển đổi ảnh định dạng HEIC sang PNG và upload tuần tự giúp ổn định backend.",
-            "Tích hợp hỗ trợ đa ngôn ngữ sử dụng i18next; đóng gói, triển khai và duy trì ứng dụng trên môi trường VPS với PM2.",
+            "Xây dựng cổng web quản trị từ đầu bằng React và TypeScript, thiết lập cấu trúc mã nguồn, luồng dữ liệu và phát triển các màn hình chính.",
+            "Làm việc cùng BA, PM và QC để làm rõ nghiệp vụ, phản biện tính khả thi kỹ thuật trước khi bắt đầu lập trình.",
+            "Phát triển các phân hệ quản lý hồ sơ lao động, danh sách chủ sử dụng, bảng phân công việc làm, biểu đồ thống kê và bảng dữ liệu lớn.",
+            "Tối ưu giao diện responsive trên máy tính, máy tính bảng, điện thoại và các trang WebView nhúng trong ứng dụng di động.",
+            "Quản lý dữ liệu ứng dụng với Redux-Saga và xử lý các biểu mẫu đăng ký nhiều bước bằng Formik và Yup.",
+            "Cài đặt phân quyền người dùng theo vai trò (RBAC) cho ba cấp: Super Admin, Master Admin và Admin.",
+            "Tích hợp thư viện ExcelJS để xử lý xuất nhập khẩu danh sách hàng nghìn hồ sơ lao động.",
+            "Xử lý nén ảnh ngay tại trình duyệt, đổi định dạng ảnh HEIC sang PNG và tải tệp lên tuần tự để tránh quá tải máy chủ.",
+            "Hỗ trợ giao diện đa ngôn ngữ với i18next; trực tiếp đóng gói và vận hành hệ thống trên máy chủ VPS qua PM2.",
           ],
           technologies: [
             "React",
@@ -173,12 +173,12 @@ export const cvVietnamese: CVData = {
         {
           name: "Goodtraepay",
           description:
-            "Nền tảng ví điện tử WebView hỗ trợ thanh toán không tiền mặt qua thẻ NFC và mã QR. Tham gia phát triển các phân hệ Social, Khảo sát (Survey), Diễn đàn hỏi đáp (Q&A) và Thử thách hàng ngày (Daily Challenges).",
+            "Nền tảng ví điện tử WebView hỗ trợ thanh toán qua thẻ NFC và mã QR. Tham gia phát triển các phân hệ Tương tác cộng đồng, Khảo sát, Diễn đàn hỏi đáp và Thử thách hàng ngày.",
           responsibilities: [
-            "Phát triển giao diện người dùng cho các module Social, Survey, Q&A Forum và Daily Challenges bằng React.",
-            "Xây dựng các trang WebView responsive nhằm tích hợp mượt mà và liền mạch vào ứng dụng di động.",
-            "Phối hợp với các nhóm Backend, QA, BA và UI/UX để phát triển tính năng mới và xử lý lỗi phát sinh.",
-            "Build ứng dụng frontend cục bộ và triển khai các bản cập nhật lên môi trường VPS cấu hình sẵn phục vụ kiểm thử và production.",
+            "Xây dựng giao diện cho các tính năng Cộng đồng, Khảo sát ý kiến, Diễn đàn hỏi đáp và Thử thách hàng ngày bằng React.",
+            "Đảm bảo các màn hình WebView hiển thị chuẩn xác và cuộn mượt khi tích hợp vào ứng dụng di động gốc.",
+            "Phối hợp với đội Backend và QC để tích hợp API, kiểm thử tính năng và xử lý lỗi giao diện.",
+            "Đóng gói bản build frontend và cập nhật mã nguồn lên môi trường thử nghiệm và vận hành thực tế.",
           ],
           technologies: [
             "React",
@@ -198,11 +198,11 @@ export const cvVietnamese: CVData = {
             url: "https://linglow.net",
           },
           description:
-            "Cổng thông tin quản trị người dùng & doanh nghiệp kết hợp cổng đối tác giúp nhà tuyển dụng đăng tin việc làm, xem xét và xử lý hồ sơ ứng tuyển từ app di động Linglow và quản lý toàn diện quy trình tuyển dụng.",
+            "Cổng web quản trị hệ thống và đối tác tuyển dụng, hỗ trợ doanh nghiệp đăng tin việc làm, duyệt hồ sơ ứng viên từ app Linglow và theo dõi kết quả tuyển dụng.",
           responsibilities: [
-            "Phát triển và duy trì các cổng web Admin và Partner sử dụng Next.js và TypeScript.",
-            "Xây dựng các UI component responsive và tái sử dụng cho các chức năng quản lý người dùng, đăng tin tuyển dụng và quản lý hồ sơ ứng tuyển.",
-            "Phối hợp chặt chẽ với các đội ngũ Backend, QA, BA và UI/UX để hoàn thiện tính năng và nâng cao chất lượng sản phẩm.",
+            "Phát triển và duy trì trang web quản trị cùng cổng dành cho đối tác bằng Next.js và TypeScript.",
+            "Xây dựng các component giao diện dùng chung phục vụ quản lý tài khoản, đăng tin tuyển dụng và lọc hồ sơ ứng viên.",
+            "Trao đổi trực tiếp với nhóm Backend và Thiết kế để thống nhất trải nghiệm người dùng và hoàn thiện luồng nghiệp vụ.",
           ],
           technologies: [
             "Next.js",
@@ -227,11 +227,11 @@ export const cvVietnamese: CVData = {
           name: "Nền tảng Bảo hiểm Giao dịch M&A (Insurance Platform for M&A)",
           teamSize: "5 thành viên",
           description:
-            "Ứng dụng web hỗ trợ quy trình bảo hiểm cho các thương vụ Mua bán & Sáp nhập doanh nghiệp (M&A).",
+            "Ứng dụng web phục vụ việc thẩm định và phát hành bảo hiểm cho các thương vụ Mua bán và Sáp nhập doanh nghiệp (M&A).",
           responsibilities: [
-            "Phát triển và duy trì giao diện ứng dụng web responsive phục vụ quy trình bảo hiểm M&A sử dụng Vue.js và Vuetify.",
-            "Xây dựng các UI component tái sử dụng nhằm nâng cao tính nhất quán và khả năng bảo trì trong toàn bộ ứng dụng.",
-            "Làm việc trong môi trường Agile/Scrum và trực tiếp trao đổi với khách hàng để làm rõ yêu cầu nghiệp vụ và báo cáo tiến độ.",
+            "Phát triển và duy trì giao diện web thẩm định bảo hiểm M&A bằng Vue.js và Vuetify.",
+            "Tách các thành phần giao diện thành component dùng chung để chuẩn hóa hiển thị và dễ nâng cấp mã nguồn.",
+            "Tham gia các buổi họp Agile/Scrum hàng ngày và trao đổi trực tiếp với khách hàng để làm rõ yêu cầu nghiệp vụ.",
           ],
           technologies: [
             "Vue.js",
@@ -251,11 +251,11 @@ export const cvVietnamese: CVData = {
             url: "https://echannel.fubonlife.com.hk/",
           },
           description:
-            "Website trực tuyến phục vụ khách hàng mua các gói bảo hiểm nhân thọ do tập đoàn Fubon Life cung cấp.",
+            "Trang web giới thiệu và đăng ký mua trực tuyến các gói bảo hiểm nhân thọ do tập đoàn Fubon Life phát hành.",
           responsibilities: [
-            "Phát triển và duy trì giao diện người dùng cho website mua bảo hiểm nhân thọ sử dụng JavaScript và jQuery.",
-            "Xây dựng các trang web responsive dựa trên bản vẽ thiết kế UI; phối hợp với đội Backend tại Singapore tích hợp GraphQL APIs.",
-            "Xử lý các vấn đề giao diện và đảm bảo tính tương thích hiển thị chuẩn xác trên đa trình duyệt.",
+            "Xây dựng giao diện web bán bảo hiểm trực tuyến bằng JavaScript và jQuery.",
+            "Hiện thực hóa bản vẽ thiết kế thành trang web responsive và phối hợp với đội kỹ sư tại Singapore để kết nối GraphQL API.",
+            "Kiểm tra và xử lý lỗi hiển thị trên nhiều trình duyệt khác nhau để đảm bảo tính đồng nhất.",
           ],
           technologies: [
             "JavaScript",
@@ -278,11 +278,11 @@ export const cvVietnamese: CVData = {
           name: "Meeting Hub (Nền tảng Đặt phòng Khách sạn)",
           teamSize: "4 thành viên",
           description:
-            "Website đặt phòng khách sạn trực tuyến cho phép người dùng tìm kiếm và đặt phòng thuận tiện.",
+            "Website tìm kiếm và đặt phòng khách sạn trực tuyến.",
           responsibilities: [
-            "Phát triển và duy trì giao diện người dùng cho website đặt phòng khách sạn sử dụng Vue.js và Element UI.",
-            "Tích hợp RESTful APIs thông qua Axios và quản lý state ứng dụng tập trung với Vuex.",
-            "Xây dựng giao diện responsive với Element UI; phối hợp với các thành viên nhóm qua Git/GitLab.",
+            "Phát triển giao diện trang đặt phòng bằng Vue.js và Element UI.",
+            "Kết nối RESTful API qua Axios và quản lý trạng thái tập trung với Vuex.",
+            "Tối ưu hiển thị cho nhiều độ phân giải màn hình và quản lý mã nguồn qua Git.",
           ],
           technologies: [
             "Vue.js",
@@ -299,10 +299,10 @@ export const cvVietnamese: CVData = {
         {
           name: "Hệ thống quản lý bảo hiểm",
           description:
-            "Bảo trì một ứng dụng web nội bộ trong lĩnh vực bảo hiểm.",
+            "Bảo trì ứng dụng web nội bộ phục vụ nghiệp vụ bảo hiểm.",
           responsibilities: [
-            "Bảo trì các chức năng hiện có và xử lý các lỗi được báo cáo.",
-            "Tham gia hỗ trợ phát triển và bảo trì dự án bằng Angular 6 và Bootstrap.",
+            "Sửa lỗi được báo cáo và duy trì hoạt động ổn định của các tính năng sẵn có.",
+            "Hỗ trợ phát triển và cập nhật thêm các màn hình mới bằng Angular 6 và Bootstrap.",
           ],
           technologies: [
             "Angular 6",
@@ -319,12 +319,11 @@ export const cvVietnamese: CVData = {
       role: "Kỹ sư kỹ thuật",
       period: "11/2017 – 09/2019",
       bullets: [
-        "Bảo trì và vận hành hệ thống Building Management System (BMS) tại Nhà ga Quốc tế T2 Đà Nẵng.",
-        "Xử lý sự cố và đảm bảo hệ thống HVAC (điều khiển điều hòa không khí) và hệ thống giám sát xử lý nước thải vận hành ổn định.",
-        "Thi công, giám sát và nghiệm thu hệ thống kiểm soát ra vào (ACS), camera giám sát (CCTV) và hệ thống Wi-Fi tại Nhà ga Quốc tế Cam Ranh.",
-        "Phối hợp với các đơn vị thi công và các bên liên quan để đảm bảo chất lượng và tiến độ dự án.",
-        "Kiểm tra, chạy thử, nghiệm thu và bàn giao hệ thống sau khi hoàn thành.",
-        "Tham gia chương trình đào tạo về giải pháp Nhà thông minh (Smart Home).",
+        "Vận hành và bảo trì hệ thống Quản lý Tòa nhà (BMS) tại Nhà ga Quốc tế T2 Đà Nẵng, đảm bảo hệ thống HVAC và xử lý nước thải chạy ổn định.",
+        "Giám sát thi công hệ thống kiểm soát ra vào (ACS), camera quan sát (CCTV) cùng mạng Wi-Fi tại Nhà ga Quốc tế Cam Ranh.",
+        "Làm việc với các đơn vị nhà thầu tại công trường để kiểm tra chất lượng và bám sát tiến độ cam kết.",
+        "Thực hiện kiểm thử thực địa, lập biên bản nghiệm thu kỹ thuật và bàn giao hệ thống cho chủ đầu tư.",
+        "Tham gia các khóa đào tạo kỹ thuật chuyên sâu về giải pháp Nhà thông minh (Smart Home).",
       ],
     },
     {
@@ -332,12 +331,11 @@ export const cvVietnamese: CVData = {
       role: "Nhân viên Phòng Cải cách sản xuất",
       period: "08/2016 – 06/2017",
       bullets: [
-        "Lập kế hoạch triển khai các dự án đưa máy móc tự động vào dây chuyền sản xuất motor.",
-        "Theo dõi và điều phối toàn bộ quá trình triển khai dự án từ giai đoạn thiết kế, đặt hàng, lắp ráp đến nghiệm thu và đưa máy vào vận hành.",
-        "Phối hợp với các bộ phận Thiết kế, Mua hàng, Lắp ráp và Quản lý chất lượng để đảm bảo tiến độ thực hiện.",
-        "Giám sát tiến độ dự án, theo dõi các hạng mục công việc và đôn đốc các bộ phận liên quan nhằm đảm bảo hoàn thành đúng kế hoạch.",
-        "Theo dõi quá trình lắp đặt, chạy thử và bàn giao thiết bị trước khi đưa vào sản xuất.",
-        "Quản lý và cập nhật hồ sơ, tài liệu liên quan đến quá trình triển khai dự án.",
+        "Lập kế hoạch và theo dõi dự án đưa máy tự động vào dây chuyền sản xuất motor.",
+        "Điều phối các giai đoạn từ bản vẽ thiết kế, đặt hàng linh kiện, lắp ráp cơ khí đến kiểm tra vận hành thử.",
+        "Phối hợp giữa các bộ phận Thiết kế, Mua hàng, Lắp ráp và Quản lý chất lượng để tháo gỡ điểm nghẽn và giữ đúng tiến độ.",
+        "Trực tiếp theo dõi quá trình chạy thử máy trước khi bàn giao vào chuyền sản xuất hàng loạt.",
+        "Quản lý và cập nhật hồ sơ kỹ thuật, danh mục linh kiện và báo cáo tiến độ triển khai.",
       ],
     },
   ],
