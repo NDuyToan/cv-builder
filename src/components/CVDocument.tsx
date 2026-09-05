@@ -5,6 +5,7 @@ import { ObjectiveSection } from './ObjectiveSection';
 import { SkillsSection } from './SkillsSection';
 import { ExperienceSection } from './ExperienceSection';
 import { EducationSection } from './EducationSection';
+import { LanguagesSection } from './LanguagesSection';
 
 interface CVDocumentProps {
   data: CVData;
@@ -42,6 +43,14 @@ export const CVDocument: React.FC<CVDocumentProps> = ({ data }) => {
           education={data.education}
           labels={data.labels}
         />
+
+        {/* Foreign Languages */}
+        {data.languages && (
+          <LanguagesSection
+            title={data.labels.languages || (data.language === 'vi' ? 'NGOẠI NGỮ' : 'FOREIGN LANGUAGES')}
+            languages={data.languages}
+          />
+        )}
       </div>
     </div>
   );

@@ -98,25 +98,11 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({
                         <span className="proj-label">{labels.project}</span>{' '}
                         <span className="proj-title">{proj.name}</span>
                       </div>
-                      {(proj.teamSize || proj.link) && (
+                      {proj.teamSize && (
                         <div className="proj-meta">
-                          {proj.teamSize && (
-                            <span className="team-size-badge">
-                              {labels.teamSize} {proj.teamSize}
-                            </span>
-                          )}
-                          {proj.teamSize && proj.link && <span> &nbsp; </span>}
-                          {proj.link && (
-                            <a
-                              href={proj.link.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="cv-link inline-link"
-                            >
-                              <span>{proj.link.label}</span>
-                              <ExternalLink size={9} className="link-icon" />
-                            </a>
-                          )}
+                          <span className="team-size-badge">
+                            {labels.teamSize} {proj.teamSize}
+                          </span>
                         </div>
                       )}
                     </div>
@@ -142,23 +128,27 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({
                       <div className="tech-stack-row">
                         <strong className="tech-title">{labels.technologies}</strong>{' '}
                         <span className="tech-list">{proj.technologies.join(', ')}</span>
-                        {proj.productUrl && (
-                          <>
-                            {' '}
-                            | <strong className="tech-title">{labels.product}</strong>{' '}
-                            <a
-                              href={proj.productUrl.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="cv-link inline-link"
-                            >
-                              <span>{proj.productUrl.label}</span>
-                              <ExternalLink size={9} className="link-icon" />
-                            </a>
-                          </>
-                        )}
                       </div>
                     )}
+
+                    {(proj.link || proj.productUrl) && (() => {
+                      const projectLink = proj.link || proj.productUrl;
+                      if (!projectLink) return null;
+                      return (
+                        <div className="proj-link-row">
+                          <strong className="proj-link-title">{labels.product}</strong>{' '}
+                          <a
+                            href={projectLink.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="cv-link inline-link"
+                          >
+                            <span>{projectLink.label}</span>
+                            <ExternalLink size={9} className="link-icon" />
+                          </a>
+                        </div>
+                      );
+                    })()}
                   </div>
 
                   {/* Sub divider between projects inside the same company */}

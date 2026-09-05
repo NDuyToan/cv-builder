@@ -80,11 +80,21 @@ export interface EducationEntry {
   hidden?: boolean;
 }
 
+export interface LanguageEntry {
+  language: string;
+  level?: string;
+  details?: string[];
+  pageBreakBefore?: boolean;
+  /** Cờ ẩn ngoại ngữ khỏi CV (vẫn lưu trong data) */
+  hidden?: boolean;
+}
+
 export interface CVLabels {
   objective: string;
   skills: string;
   experience: string;
   education: string;
+  languages?: string;
   responsibilities: string;
   technologies: string;
   description: string;
@@ -112,4 +122,5 @@ export interface CVData {
   skills: SkillCategory[];
   experiences: ExperienceEntry[];
   education: EducationEntry[];
+  languages?: LanguageEntry[];
 }

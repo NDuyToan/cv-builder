@@ -9,6 +9,7 @@ export const cvVietnamese: CVData = {
     skills: "KỸ NĂNG CHUYÊN MÔN",
     experience: "KINH NGHIỆM LÀM VIỆC",
     education: "HỌC VẤN",
+    languages: "NGOẠI NGỮ",
     responsibilities: "Trách nhiệm chính:",
     technologies: "Công nghệ:",
     description: "Mô tả:",
@@ -123,14 +124,15 @@ export const cvVietnamese: CVData = {
   ],
   experiences: [
     {
-      company: "Dự án cá nhân & Nâng cao kỹ thuật (Personal Projects)",
+      company: "Dự án cá nhân & Nâng cao kỹ thuật",
       period: "12/2025 – Hiện tại",
       description:
-        "Xây dựng các dự án cá nhân bằng React, Next.js và TypeScript để thử nghiệm kiến trúc mới và thiết kế component có tính tái sử dụng cao.",
+        "Đang phát triển các dự án cá nhân full-stack, tiêu biểu là Badminton Shop, sử dụng Next.js, NestJS, TypeScript, PostgreSQL và Prisma. Tập trung nâng cao năng lực phát triển ứng dụng end-to-end, thực hành kiến trúc phần mềm hiện đại và xây dựng các component có tính tái sử dụng cao.",
       bullets: [
-        "Phát triển ứng dụng full-stack hoàn chỉnh với xác thực tài khoản, RESTful API, kiểm tra biểu mẫu và giao diện tương thích đa thiết bị.",
-        "Cải thiện tốc độ tải trang bằng kỹ thuật lazy loading, chia nhỏ mã nguồn (code splitting), lưu bộ nhớ đệm API và giảm số lần render thừa.",
-        "Làm quen với triển khai thực tế trên Linux và Docker, kết hợp backend Node.js (Express.js, NestJS) cùng MongoDB và Prisma.",
+        "Thiết kế và triển khai kiến trúc monorepo gồm frontend, backend và admin, tổ chức mã nguồn theo hướng module hóa, dễ bảo trì và mở rộng.",
+        "Xây dựng các chức năng quản lý sản phẩm, danh mục, xác thực tài khoản và RESTful API, đồng thời thực hành kết nối và quản lý dữ liệu với PostgreSQL và Prisma.",
+        "Thực hành triển khai ứng dụng thực tế trên Linux, Docker và PM2, đồng thời xây dựng quy trình CI/CD với GitLab để tự động hóa việc build và deploy.",
+        "Nâng cao kiến thức về NestJS, Prisma, PostgreSQL, Docker và CI/CD thông qua quá trình phát triển, kiểm thử và vận hành dự án.",
       ],
     },
     {
@@ -139,7 +141,7 @@ export const cvVietnamese: CVData = {
       period: "01/2023 – 11/2025",
       projects: [
         {
-          name: "Seasonal Worker Management (Quản lý lao động chính quyền địa phương Hàn Quốc)",
+          name: "Quản lý lao động của chính quyền địa phương Hàn Quốc",
           teamSize: "20 thành viên (Frontend: 6)",
           description:
             "Hệ thống quản lý lao động cho chính quyền địa phương tại Hàn Quốc, phục vụ theo dõi lao động thời vụ nước ngoài, chủ hộ sử dụng lao động và điều phối công việc qua web quản trị và ứng dụng WebView.",
@@ -246,7 +248,7 @@ export const cvVietnamese: CVData = {
         {
           name: "Kênh Bán Bảo hiểm PowerSave 3 Năm (Fubon Life)",
           teamSize: "5 thành viên",
-          productUrl: {
+          link: {
             label: "echannel.fubonlife.com.hk",
             url: "https://echannel.fubonlife.com.hk/",
           },
@@ -277,8 +279,7 @@ export const cvVietnamese: CVData = {
         {
           name: "Meeting Hub (Nền tảng Đặt phòng Khách sạn)",
           teamSize: "4 thành viên",
-          description:
-            "Website tìm kiếm và đặt phòng khách sạn trực tuyến.",
+          description: "Website tìm kiếm và đặt phòng khách sạn trực tuyến.",
           responsibilities: [
             "Phát triển giao diện trang đặt phòng bằng Vue.js và Element UI.",
             "Kết nối RESTful API qua Axios và quản lý trạng thái tập trung với Vuex.",
@@ -332,7 +333,6 @@ export const cvVietnamese: CVData = {
       period: "08/2016 – 06/2017",
       bullets: [
         "Lập kế hoạch và theo dõi dự án đưa máy tự động vào dây chuyền sản xuất motor.",
-        "Điều phối các giai đoạn từ bản vẽ thiết kế, đặt hàng linh kiện, lắp ráp cơ khí đến kiểm tra vận hành thử.",
         "Phối hợp giữa các bộ phận Thiết kế, Mua hàng, Lắp ráp và Quản lý chất lượng để tháo gỡ điểm nghẽn và giữ đúng tiến độ.",
         "Trực tiếp theo dõi quá trình chạy thử máy trước khi bàn giao vào chuyền sản xuất hàng loạt.",
         "Quản lý và cập nhật hồ sơ kỹ thuật, danh mục linh kiện và báo cáo tiến độ triển khai.",
@@ -347,6 +347,17 @@ export const cvVietnamese: CVData = {
       major: "Kỹ thuật Cơ điện tử",
       gpa: "3.00 / 4",
       grade: "Khá",
+    },
+  ],
+  languages: [
+    {
+      language: "Tiếng Anh",
+      level: "Giao tiếp cơ bản & Đọc hiểu tài liệu",
+      details: [
+        "Đọc hiểu tốt tài liệu kỹ thuật chuyên ngành và API specifications.",
+        "Giao tiếp công việc hiệu quả qua email và tin nhắn (chat).",
+        "Giao tiếp hội thoại cơ bản trong trao đổi công việc hàng ngày.",
+      ],
     },
   ],
 };

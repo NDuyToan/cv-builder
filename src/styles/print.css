@@ -134,12 +134,14 @@
     break-inside: avoid !important;
   }
 
-  .edu-entry {
+  .edu-entry,
+  .lang-entry {
     page-break-inside: avoid;
     break-inside: avoid;
   }
 
-  .edu-top-row {
+  .edu-top-row,
+  .lang-top-row {
     page-break-after: avoid !important;
     break-after: avoid !important;
   }

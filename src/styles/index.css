@@ -669,6 +669,18 @@ body {
   color: var(--text-main);
 }
 
+.proj-link-row {
+  margin-top: 3px;
+  font-size: 12px;
+  color: var(--text-main);
+  line-height: 1.42;
+}
+
+.proj-link-title {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
 .proj-sub-divider {
   border: 0;
   border-top: 1px dashed var(--border-subtle);
@@ -711,3 +723,32 @@ body {
   color: var(--primary-color);
   font-weight: 700;
 }
+
+/* ==========================================================================
+   LANGUAGES SECTION
+   ========================================================================== */
+.lang-entry {
+  margin-bottom: 6px;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.lang-top-row {
+  font-size: 13.5px;
+  margin-bottom: 4px;
+}
+
+.lang-name {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.lang-divider {
+  color: var(--text-muted);
+}
+
+.lang-level {
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
