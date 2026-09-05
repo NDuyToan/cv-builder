@@ -273,6 +273,48 @@ export const cvEnglish: CVData = {
             'GitLab',
           ],
         },
+        {
+          name: 'Insurance Management System',
+          description:
+            'Maintained an internal web application in the insurance domain.',
+          responsibilities: [
+            'Maintained existing features and resolved reported bugs and issues.',
+            'Supported development and maintenance of the project using Angular 6 and Bootstrap.',
+          ],
+          technologies: [
+            'Angular 6',
+            'Bootstrap',
+            'TypeScript',
+            'Git',
+            'GitLab',
+          ],
+        },
+      ],
+    },
+    {
+      company: 'Vinteli Company Limited',
+      role: 'Technical Engineer',
+      period: '11/2017 – 09/2019',
+      bullets: [
+        'Maintained and operated the Building Management System (BMS) at Da Nang International Terminal T2.',
+        'Troubleshot issues and ensured stable operation of the HVAC (climate control) system and wastewater treatment monitoring system.',
+        'Executed, supervised, and commissioned Access Control Systems (ACS), CCTV surveillance, and Wi-Fi infrastructure at Cam Ranh International Terminal.',
+        'Coordinated with contractors and project stakeholders to ensure work quality and delivery schedules.',
+        'Conducted system testing, commissioning, quality inspection, and official project handover upon completion.',
+        'Participated in training programs on Smart Home automation solutions.',
+      ],
+    },
+    {
+      company: 'Mabuchi Motor Danang Co., Ltd.',
+      role: 'Production Innovation Staff',
+      period: '08/2016 – 06/2017',
+      bullets: [
+        'Planned and scheduled implementation projects for introducing automated machinery into motor production lines.',
+        'Monitored and coordinated the end-to-end project lifecycle from design, equipment ordering, and assembly to commissioning and live operation.',
+        'Collaborated with Design, Purchasing, Assembly, and Quality Control departments to guarantee project progress.',
+        'Tracked project milestones, monitored work packages, and urged related teams to ensure on-time delivery.',
+        'Supervised machinery installation, trial runs, and equipment handover prior to mass manufacturing.',
+        'Managed and updated engineering records, manuals, and technical documentation related to project execution.',
       ],
     },
   ],

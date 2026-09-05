@@ -296,6 +296,48 @@ export const cvVietnamese: CVData = {
             "GitLab",
           ],
         },
+        {
+          name: "Hệ thống quản lý bảo hiểm",
+          description:
+            "Bảo trì một ứng dụng web nội bộ trong lĩnh vực bảo hiểm.",
+          responsibilities: [
+            "Bảo trì các chức năng hiện có và xử lý các lỗi được báo cáo.",
+            "Tham gia hỗ trợ phát triển và bảo trì dự án bằng Angular 6 và Bootstrap.",
+          ],
+          technologies: [
+            "Angular 6",
+            "Bootstrap",
+            "TypeScript",
+            "Git",
+            "GitLab",
+          ],
+        },
+      ],
+    },
+    {
+      company: "Công ty TNHH Vinteli",
+      role: "Kỹ sư kỹ thuật",
+      period: "11/2017 – 09/2019",
+      bullets: [
+        "Bảo trì và vận hành hệ thống Building Management System (BMS) tại Nhà ga Quốc tế T2 Đà Nẵng.",
+        "Xử lý sự cố và đảm bảo hệ thống HVAC (điều khiển điều hòa không khí) và hệ thống giám sát xử lý nước thải vận hành ổn định.",
+        "Thi công, giám sát và nghiệm thu hệ thống kiểm soát ra vào (ACS), camera giám sát (CCTV) và hệ thống Wi-Fi tại Nhà ga Quốc tế Cam Ranh.",
+        "Phối hợp với các đơn vị thi công và các bên liên quan để đảm bảo chất lượng và tiến độ dự án.",
+        "Kiểm tra, chạy thử, nghiệm thu và bàn giao hệ thống sau khi hoàn thành.",
+        "Tham gia chương trình đào tạo về giải pháp Nhà thông minh (Smart Home).",
+      ],
+    },
+    {
+      company: "Công ty TNHH Mabuchi Motor Đà Nẵng",
+      role: "Nhân viên Phòng Cải cách sản xuất",
+      period: "08/2016 – 06/2017",
+      bullets: [
+        "Lập kế hoạch triển khai các dự án đưa máy móc tự động vào dây chuyền sản xuất motor.",
+        "Theo dõi và điều phối toàn bộ quá trình triển khai dự án từ giai đoạn thiết kế, đặt hàng, lắp ráp đến nghiệm thu và đưa máy vào vận hành.",
+        "Phối hợp với các bộ phận Thiết kế, Mua hàng, Lắp ráp và Quản lý chất lượng để đảm bảo tiến độ thực hiện.",
+        "Giám sát tiến độ dự án, theo dõi các hạng mục công việc và đôn đốc các bộ phận liên quan nhằm đảm bảo hoàn thành đúng kế hoạch.",
+        "Theo dõi quá trình lắp đặt, chạy thử và bàn giao thiết bị trước khi đưa vào sản xuất.",
+        "Quản lý và cập nhật hồ sơ, tài liệu liên quan đến quá trình triển khai dự án.",
       ],
     },
   ],
