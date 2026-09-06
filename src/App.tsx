@@ -1,27 +1,27 @@
-import { useState, useEffect } from 'react';
-import { cvVietnamese, cvEnglish, cvProfiles } from './data';
-import { CVData } from './types/cv';
-import { Toolbar, ColorTheme } from './components/Toolbar';
-import { CVDocument } from './components/CVDocument';
-import './styles/index.css';
-import './styles/print.css';
+import { useState, useEffect } from "react";
+import { cvVietnamese, cvEnglish, cvProfiles } from "./data";
+import { CVData } from "./types/cv";
+import { Toolbar, ColorTheme } from "./components/Toolbar";
+import { CVDocument } from "./components/CVDocument";
+import "./styles/index.css";
+import "./styles/print.css";
 
 export function App() {
-  const [currentLang, setCurrentLang] = useState<'vi' | 'en'>('vi');
-  const [selectedProfileId, setSelectedProfileId] = useState<string>('cv-vi');
-  const [currentTheme, setCurrentTheme] = useState<ColorTheme>('ocean');
+  const [currentLang, setCurrentLang] = useState<"vi" | "en">("vi");
+  const [selectedProfileId, setSelectedProfileId] = useState<string>("cv-vi");
+  const [currentTheme, setCurrentTheme] = useState<ColorTheme>("ocean");
 
   // Determine active CV data
   const activeCV: CVData = (() => {
     const found = cvProfiles.find((p) => p.id === selectedProfileId);
     if (found && found.language === currentLang) return found;
-    return currentLang === 'vi' ? cvVietnamese : cvEnglish;
+    return currentLang === "vi" ? cvVietnamese : cvEnglish;
   })();
 
   // Handle language switch
-  const handleLanguageChange = (lang: 'vi' | 'en') => {
+  const handleLanguageChange = (lang: "vi" | "en") => {
     setCurrentLang(lang);
-    setSelectedProfileId(lang === 'vi' ? 'cv-vi' : 'cv-en');
+    setSelectedProfileId(lang === "vi" ? "cv-vi" : "cv-en");
   };
 
   // Handle profile switch
