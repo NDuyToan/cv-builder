@@ -89,10 +89,11 @@ export const cvPromax: CVData = {
     {
       category: "Ứng dụng AI & Tối ưu hiệu suất",
       items: [
+        "Google Antigravity",
         "Cursor AI",
-        "GitHub Copilot",
+        "Codex",
         "ChatGPT / Claude",
-        "Ứng dụng AI trong phân tích nghiệp vụ, debug & sinh mã nguồn tự động",
+        "Ứng dụng AI trong phân tích nghiệp vụ, debug & tối ưu mã nguồn",
       ],
     },
     {

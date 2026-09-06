@@ -2,8 +2,9 @@ import { CVData } from '../types/cv';
 import { cvVietnamese } from './cv-vi';
 import { cvEnglish } from './cv-en';
 import { cvPromax } from './cv-promax';
+import { cvWorki } from './cv-worki';
 
-export { cvVietnamese, cvEnglish, cvPromax };
+export { cvVietnamese, cvEnglish, cvPromax, cvWorki };
 
 /**
  * Danh sách các profile CV hiện có.
@@ -11,10 +12,12 @@ export { cvVietnamese, cvEnglish, cvPromax };
  * và thêm vào mảng cvProfiles bên dưới để lựa chọn trên giao diện.
  */
 export const cvProfiles: CVData[] = [
+  cvWorki,
   cvPromax,
   cvVietnamese,
   cvEnglish,
 ];
 
-export const defaultCV = cvPromax;
+export const defaultCV = cvWorki;
+
 

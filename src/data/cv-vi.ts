@@ -103,6 +103,7 @@ export const cvVietnamese: CVData = {
         "GitLab",
         "Docker (kiến thức cơ bản)",
         "PM2 (kiến thức cơ bản)",
+        "Google Antigravity",
         "Cursor",
         "Codex",
       ],
